@@ -47,3 +47,21 @@
 **Build state:** clean — 15 pages, no errors, no warnings
 
 **Next engineer:** pa-ilb6.26.8 (Jobs/Careers) and pa-ilb6.26.9 (News) remaining.
+
+---
+
+## 2026-04-28 — pa-ilb6.26.8 — Jobs/Hiring page
+
+**Task:** Add Jobs/Careers page with 4 placeholder roles and JDs.
+
+**What was done:**
+
+- Created `content/jobs.md` — "Join Us" page with 4 current openings: CEO/MD, Head of Vendor Certification, Head of Strategic Partnerships, Head of SME Sales
+- Each role has: title, type/location/equity metadata, 3–4 sentence JD, and a placeholder `[Apply](#)` link (ready for real URL)
+- mailto link at page top includes subject, body, and three structured prompt fields (name, role, CV)
+- Equal-opportunity statement at foot
+- Jobs already appears in nav from pa-ilb6.26.6 (weight 60, "Join Us")
+
+**Build state:** clean — 16 pages, no errors
+
+**Next engineer:** pa-ilb6.26.9 (News/Opinion feed) is the final remaining task.
