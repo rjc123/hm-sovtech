@@ -1,0 +1,33 @@
+baseurl                  = "https://sovtech.theprivatealpha.com"
+languageCode             = "en-gb"
+defaultContentLanguage   = "en"
+isMultilingual           = false
+title                    = "Sovereign Tech Stack"
+theme                    = "sam"
+pygmentsStyle            = "monokai"
+pygmentsCodefences       = true
+
+[params]
+    dateform             = "Jan 2006"
+    favicon              = "favicon.ico"
+    homepage             = ""
+    footerText           = "Sovereign Tech Stack — a UK-owned technology platform for British businesses."
+    description          = "A certification platform assembling a complete UK-owned technology stack for British SMEs — replacing US defaults with certified domestic alternatives."
+    images               = ["og.png"]
+    title                = "Sovereign Tech Stack"
+
+[[params.mainMenu]]
+    link = "the-case"
+    text = "The Case"
+
+[[params.mainMenu]]
+    link = "the-platform"
+    text = "The Platform"
+
+[[params.mainMenu]]
+    link = "the-market"
+    text = "The Market"
+
+[[params.mainMenu]]
+    link = "about"
+    text = "About"
