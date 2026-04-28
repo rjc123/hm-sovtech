@@ -23,3 +23,27 @@
 **Build state:** clean — 14 pages, no errors, no warnings
 
 **Next engineer:** Tasks pa-ilb6.26.7 (About/Team), pa-ilb6.26.8 (Jobs/Careers), pa-ilb6.26.9 (News) are next in sequence. All are independent — any order works.
+
+---
+
+## 2026-04-28 — pa-ilb6.26.7 — About/Team page with placeholder leader profiles
+
+**Task:** Add Team page with placeholder senior leader profiles and grey SVG headshot.
+
+**What was done:**
+
+- Created `static/images/placeholder-headshot.svg` — grey silhouette SVG (head + shoulders), used for all three roles
+- Created `content/team.md` — Leadership Team page with 3 placeholder profiles: CEO, Head of Vendor Certification, Head of Strategic Partnerships
+- Each profile uses the shared SVG headshot, a "Position Vacant — Recruiting Now" status badge, and a substantive placeholder bio
+- Added Team to nav in config.toml (weight 55, between About and Join Us)
+- Updated `about.md` to reference the Team page
+- Enabled `markup.goldmark.renderer.unsafe = true` in config.toml to allow inline HTML (used for CSS grid layout of cards)
+- mailto link on team page includes subject and body per convention
+
+**Decisions:**
+- Used inline HTML/CSS for the team card grid layout — PaperMod has no built-in card shortcode; inline HTML is the cleanest approach for a single page
+- 3 roles created (CEO, Head of Vendor Certification, Head of Strategic Partnerships) per task spec — Head of SME Sales is assigned to the Jobs page (pa-ilb6.26.8) per task breakdown
+
+**Build state:** clean — 15 pages, no errors, no warnings
+
+**Next engineer:** pa-ilb6.26.8 (Jobs/Careers) and pa-ilb6.26.9 (News) remaining.

@@ -10,6 +10,8 @@ Sovereign Tech Stack is in active development — an 18–24 month incubation be
 
 The platform is being built by a UK-based technology strategist with a background in public sector transformation and SME technology advisory. The incubator's role is architect and investor, not operator. A CEO is required to run this — the right profile is an ecosystem builder comfortable with a standards and certification business, with SME channel relationships and a UK tech network.
 
+See the [Leadership Team](/team/) page for current open senior positions.
+
 ---
 
 ## Timeline

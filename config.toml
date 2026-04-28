@@ -83,10 +83,21 @@ Not advocacy. Not policy. Not a directory. A purchasable answer to the question:
     weight     = 50
 
   [[menu.main]]
+    identifier = "team"
+    name       = "Team"
+    url        = "/team/"
+    weight     = 55
+
+  [[menu.main]]
     identifier = "jobs"
     name       = "Join Us"
     url        = "/jobs/"
     weight     = 60
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
