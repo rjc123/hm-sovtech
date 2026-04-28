@@ -1,6 +1,9 @@
 ---
 title: "The Market"
 date: 2026-04-28
+description: "The addressable market for UK-owned technology certification — buyers, scale, and revenue model."
+hidemeta: true
+showtoc: true
 ---
 
 ## Who this is for

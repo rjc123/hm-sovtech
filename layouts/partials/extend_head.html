@@ -1,0 +1,3 @@
+{{- /* Sovereign Tech Stack — brand CSS override */ -}}
+{{ $css := resources.Get "css/sovereign.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous">

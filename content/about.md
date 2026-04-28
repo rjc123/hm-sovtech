@@ -1,6 +1,9 @@
 ---
 title: "About"
 date: 2026-04-28
+description: "About the Sovereign Tech Stack initiative — who is building it, and what comes next."
+hidemeta: true
+showtoc: false
 ---
 
 Sovereign Tech Stack is in active development — an 18–24 month incubation before commercial launch.
@@ -19,4 +22,4 @@ The 12–18 month window before mainstream SME demand matures is the runway to b
 
 ## Get in touch
 
-If you are a UK technology vendor seeking certification, a potential strategic partner, or interested in the CEO role — [reach out](mailto:hello@theprivatealpha.com?subject=Sovereign%20Tech%20Stack%20enquiry&body=Hello%2C%0A%0AI%20am%20getting%20in%20touch%20regarding%20Sovereign%20Tech%20Stack.%0A%0A).
+If you are a UK technology vendor seeking certification, a potential strategic partner, or interested in the CEO role — [reach out](mailto:hello@theprivatealpha.com?subject=Sovereign%20Tech%20Stack%20enquiry&body=Hello%2C%0A%0AI%20am%20getting%20in%20touch%20regarding%20Sovereign%20Tech%20Stack.%0A%0AName%3A%0AOrganisation%3A%0AReason%20for%20contact%3A%0A).

@@ -1,33 +1,92 @@
 baseurl                  = "https://sovtech.theprivatealpha.com"
 languageCode             = "en-gb"
 defaultContentLanguage   = "en"
-isMultilingual           = false
 title                    = "Sovereign Tech Stack"
-theme                    = "sam"
-pygmentsStyle            = "monokai"
-pygmentsCodefences       = true
+copyright                = "© 2026 Sovereign Tech Stack. All rights reserved."
+theme                    = "PaperMod"
+paginate                 = 10
+enableRobotsTXT          = true
+buildDrafts              = false
+buildFuture              = false
+
+[minify]
+  disableXML = true
+  minifyOutput = true
 
 [params]
-    dateform             = "Jan 2006"
-    favicon              = "favicon.ico"
-    homepage             = ""
-    footerText           = "Sovereign Tech Stack — a UK-owned technology platform for British businesses."
-    description          = "A certification platform assembling a complete UK-owned technology stack for British SMEs — replacing US defaults with certified domestic alternatives."
-    images               = ["og.png"]
-    title                = "Sovereign Tech Stack"
+  env                    = "production"
+  title                  = "Sovereign Tech Stack"
+  description            = "A certification platform assembling a complete UK-owned technology stack for British businesses — replacing US defaults with certified domestic alternatives."
+  keywords               = ["UK tech sovereignty", "British technology", "data residency", "SME technology", "UK-owned software"]
+  author                 = "Sovereign Tech Stack"
+  images                 = ["og.png"]
+  dateFormat             = "2 January 2006"
+  defaultTheme           = "light"
+  disableThemeToggle     = true
+  ShowReadingTime        = false
+  ShowShareButtons       = false
+  ShowPostNavLinks       = true
+  ShowBreadCrumbs        = true
+  ShowCodeCopyButtons    = false
+  ShowWordCount          = false
+  ShowRssButtonInSectionTermList = false
+  UseHugoToc             = false
+  disableSpecial1stPost  = true
+  disableScrollToTop     = false
+  comments               = false
+  hidemeta               = true
+  hideSummary            = false
+  showtoc                = false
+  tocopen                = false
 
-[[params.mainMenu]]
-    link = "the-case"
-    text = "The Case"
+  [params.homeInfoParams]
+    Title   = "UK technology. British ownership. Sovereign infrastructure."
+    Content = """
+British businesses run on American infrastructure. From DNS and hosting through email, documents, CRM, messaging, payments, and AI — the default stack is Google, Microsoft, Salesforce, AWS, Slack, Stripe, and OpenAI.
 
-[[params.mainMenu]]
-    link = "the-platform"
-    text = "The Platform"
+**Sovereign Tech Stack is the alternative.** A certification platform that assembles and validates a complete UK-owned technology stack — and makes it commercially available to British SMEs as a coherent, easy-to-adopt proposition.
 
-[[params.mainMenu]]
-    link = "the-market"
-    text = "The Market"
+Not advocacy. Not policy. Not a directory. A purchasable answer to the question: *what should we use instead?*
+"""
 
-[[params.mainMenu]]
-    link = "about"
-    text = "About"
+  [params.socialIcons]
+
+[menu]
+  [[menu.main]]
+    identifier = "the-case"
+    name       = "The Case"
+    url        = "/the-case/"
+    weight     = 10
+
+  [[menu.main]]
+    identifier = "the-platform"
+    name       = "The Platform"
+    url        = "/the-platform/"
+    weight     = 20
+
+  [[menu.main]]
+    identifier = "the-market"
+    name       = "The Market"
+    url        = "/the-market/"
+    weight     = 30
+
+  [[menu.main]]
+    identifier = "news"
+    name       = "News"
+    url        = "/news/"
+    weight     = 40
+
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about/"
+    weight     = 50
+
+  [[menu.main]]
+    identifier = "jobs"
+    name       = "Join Us"
+    url        = "/jobs/"
+    weight     = 60
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

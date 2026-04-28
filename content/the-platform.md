@@ -1,6 +1,9 @@
 ---
 title: "The Platform"
 date: 2026-04-28
+description: "How the Sovereign Tech Stack certification platform works — standards, structure, and commercial model."
+hidemeta: true
+showtoc: true
 ---
 
 ## What Sovereign Tech Stack is

@@ -1,6 +1,9 @@
 ---
 title: "The Case"
 date: 2026-04-28
+description: "Why UK digital sovereignty matters — and why this is the moment to build."
+hidemeta: true
+showtoc: true
 ---
 
 ## Why this matters
