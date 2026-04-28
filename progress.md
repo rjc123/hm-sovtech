@@ -65,3 +65,39 @@
 **Build state:** clean — 16 pages, no errors
 
 **Next engineer:** pa-ilb6.26.9 (News/Opinion feed) is the final remaining task.
+
+---
+
+## 2026-04-28 — pa-ilb6.26.9 — News/Opinion feed with 4 placeholder posts
+
+**Task:** Add News/Opinion section with placeholder articles on UK tech sovereignty topics.
+
+**What was done:**
+
+- Created `content/news/` section directory
+- Created `content/news/_index.md` — section index with title and description; PaperMod renders this as a post list automatically
+- Created 4 placeholder articles (all `draft: false`):
+  - `the-case-for-uk-owned-infrastructure.md` — dated 2026-04-15
+  - `what-the-sovereign-ai-fund-means-for-british-smes.md` — dated 2026-04-20
+  - `why-data-residency-is-no-longer-optional.md` — dated 2026-04-22
+  - `building-a-british-tech-ecosystem.md` — dated 2026-04-25
+- Each article: proper frontmatter (title, date, draft: false, description), 3–4 paragraphs of substantive placeholder content, clearly labelled as placeholder at top
+- News already appears in nav from pa-ilb6.26.6 (weight 40)
+
+**Build state:** clean — 22 pages, no errors
+
+---
+
+## Session Summary — 2026-04-28
+
+**Ralph continuous session complete — 4 tasks completed, queue empty.**
+
+Tasks completed:
+1. pa-ilb6.26.6 — Theme switch: sam → PaperMod with UK sovereign brand palette
+2. pa-ilb6.26.7 — Team page with 3 placeholder leadership profiles and SVG headshot
+3. pa-ilb6.26.8 — Jobs page with 4 founding-team role descriptions
+4. pa-ilb6.26.9 — News section with 4 placeholder opinion articles
+
+Site state on exit: 22 pages, clean build, no errors.
+
+No tasks remaining in the actor:ralph / theme:sovereign-tech queue. Remaining beads items for sovereign-tech are actor:robin and actor:malph tasks (pa-74ft, pa-knea, pa-r2jp) — not Ralph's work.
