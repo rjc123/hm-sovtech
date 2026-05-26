@@ -72,6 +72,12 @@ Not advocacy. Not policy. Not a directory. A purchasable answer to the question:
     weight     = 30
 
   [[menu.main]]
+    identifier = "the-stack"
+    name       = "The Stack"
+    url        = "/the-stack/"
+    weight     = 35
+
+  [[menu.main]]
     identifier = "news"
     name       = "News"
     url        = "/news/"
