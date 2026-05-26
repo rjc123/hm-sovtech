@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://sovtech.theprivatealpha.com/sitemap.xml

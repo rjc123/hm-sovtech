@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Categories on Sovereign Tech Stack</title>
+    <link>https://sovtech.theprivatealpha.com/categories/</link>
+    <description>Recent content in Categories on Sovereign Tech Stack</description>
+    <image>
+      <title>Sovereign Tech Stack</title>
+      <url>https://sovtech.theprivatealpha.com/og.png</url>
+      <link>https://sovtech.theprivatealpha.com/og.png</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>en-gb</language>
+    <copyright>2026 Sovereign Tech Stack. All rights reserved.</copyright>
+    <atom:link href="https://sovtech.theprivatealpha.com/categories/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

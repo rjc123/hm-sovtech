@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>News &amp; Opinion on Sovereign Tech Stack</title>
+    <link>https://sovtech.theprivatealpha.com/news/</link>
+    <description>Recent content in News &amp; Opinion on Sovereign Tech Stack</description>
+    <image>
+      <title>Sovereign Tech Stack</title>
+      <url>https://sovtech.theprivatealpha.com/og.png</url>
+      <link>https://sovtech.theprivatealpha.com/og.png</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>en-gb</language>
+    <copyright>2026 Sovereign Tech Stack. All rights reserved.</copyright>
+    <lastBuildDate>Sat, 25 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sovtech.theprivatealpha.com/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building a British Tech Ecosystem</title>
+      <link>https://sovtech.theprivatealpha.com/news/building-a-british-tech-ecosystem/</link>
+      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://sovtech.theprivatealpha.com/news/building-a-british-tech-ecosystem/</guid>
+      <description>The UK has the vendors. What it lacks is the connective tissue that turns a collection of products into a coherent alternative.</description>
+    </item>
+    <item>
+      <title>Why Data Residency Is No Longer Optional</title>
+      <link>https://sovtech.theprivatealpha.com/news/why-data-residency-is-no-longer-optional/</link>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://sovtech.theprivatealpha.com/news/why-data-residency-is-no-longer-optional/</guid>
+      <description>Data residency has moved from a nice-to-have to a procurement requirement — and the trajectory is only going in one direction.</description>
+    </item>
+    <item>
+      <title>What the Sovereign AI Fund Means for British SMEs</title>
+      <link>https://sovtech.theprivatealpha.com/news/what-the-sovereign-ai-fund-means-for-british-smes/</link>
+      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://sovtech.theprivatealpha.com/news/what-the-sovereign-ai-fund-means-for-british-smes/</guid>
+      <description>The UK government has committed £500 million to UK AI — here is what it means in practice for small businesses.</description>
+    </item>
+    <item>
+      <title>The Case for UK-Owned Infrastructure</title>
+      <link>https://sovtech.theprivatealpha.com/news/the-case-for-uk-owned-infrastructure/</link>
+      <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://sovtech.theprivatealpha.com/news/the-case-for-uk-owned-infrastructure/</guid>
+      <description>Most British businesses have never questioned their technology stack. They should.</description>
+    </item>
+  </channel>
+</rss>

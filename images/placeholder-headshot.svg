@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Placeholder headshot">
+  <rect width="200" height="200" fill="#D6D6E7" rx="8"/>
+  <!-- Head -->
+  <circle cx="100" cy="72" r="36" fill="#A0A0B8"/>
+  <!-- Shoulders / body silhouette -->
+  <ellipse cx="100" cy="170" rx="60" ry="40" fill="#A0A0B8"/>
+  <!-- Neck -->
+  <rect x="88" y="104" width="24" height="20" fill="#A0A0B8"/>
+</svg>
