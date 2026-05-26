@@ -1,3 +1,89 @@
 {{- /* Sovereign Tech Stack — brand CSS override */ -}}
 {{ $css := resources.Get "css/sovereign.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous">
+
+{{- /* Pre-launch access gate — intentionally weak (security theatre) */ -}}
+<style>
+  html.sts-gated body { visibility: hidden; }
+  html.sts-gated #sts-gate { visibility: visible !important; }
+  #sts-gate {
+    position: fixed; inset: 0; z-index: 9999;
+    background: #00247D; color: white;
+    display: flex; align-items: center; justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  #sts-gate .card {
+    background: white; color: #00247D;
+    padding: 2.5rem 2rem; border-radius: 8px;
+    max-width: 420px; width: 90%;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    text-align: center;
+  }
+  #sts-gate h1 { margin: 0 0 0.5rem; color: #00247D; font-size: 1.4rem; }
+  #sts-gate p { margin: 0 0 1.25rem; color: #444; font-size: 0.95rem; }
+  #sts-gate form { display: flex; gap: 0.5rem; }
+  #sts-gate input {
+    flex: 1; padding: 0.7rem 0.9rem; border: 2px solid #00247D;
+    border-radius: 4px; font-size: 1rem; outline: none;
+  }
+  #sts-gate input:focus { border-color: #CF142B; }
+  #sts-gate button {
+    padding: 0.7rem 1.1rem; border: none; border-radius: 4px;
+    background: #CF142B; color: white; font-weight: 600;
+    cursor: pointer; font-size: 1rem;
+  }
+  #sts-gate button:hover { background: #a30f22; }
+  #sts-gate .err { color: #CF142B; margin-top: 1rem !important; font-size: 0.9rem; display: none; }
+</style>
+<script>
+(function () {
+  var PW_HASH = '31eb0029af530a41bf93093050f7786c3694a8d378b5e0275c297a58616dc672';
+  var KEY = 'sts-authed';
+
+  if (sessionStorage.getItem(KEY) === 'true') return;
+  document.documentElement.classList.add('sts-gated');
+
+  async function sha256(text) {
+    var buf = new TextEncoder().encode(text);
+    var hashBuf = await crypto.subtle.digest('SHA-256', buf);
+    return Array.from(new Uint8Array(hashBuf))
+      .map(function (b) { return b.toString(16).padStart(2, '0'); })
+      .join('');
+  }
+
+  function render() {
+    var overlay = document.createElement('div');
+    overlay.id = 'sts-gate';
+    overlay.innerHTML =
+      '<div class="card">' +
+        '<h1>Sovereign Tech Stack</h1>' +
+        '<p>Pre-launch preview. Enter access code to continue.</p>' +
+        '<form><input type="password" autocomplete="off" autofocus /><button type="submit">Enter</button></form>' +
+        '<p class="err">Incorrect access code.</p>' +
+      '</div>';
+    document.body.appendChild(overlay);
+
+    var input = overlay.querySelector('input');
+    var err = overlay.querySelector('.err');
+    overlay.querySelector('form').addEventListener('submit', async function (e) {
+      e.preventDefault();
+      var hash = await sha256(input.value);
+      if (hash === PW_HASH) {
+        sessionStorage.setItem(KEY, 'true');
+        overlay.remove();
+        document.documentElement.classList.remove('sts-gated');
+      } else {
+        err.style.display = 'block';
+        input.value = '';
+        input.focus();
+      }
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', render);
+  } else {
+    render();
+  }
+})();
+</script>
