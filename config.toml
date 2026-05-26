@@ -101,6 +101,12 @@ Not advocacy. Not policy. Not a directory. A purchasable answer to the question:
     url        = "/jobs/"
     weight     = 60
 
+  [[menu.main]]
+    identifier = "whats-next"
+    name       = "What's Next"
+    url        = "/whats-next/"
+    weight     = 70
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
